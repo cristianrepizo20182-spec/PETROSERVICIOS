@@ -3,72 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Petroservicios Industriales S.A.S — Sector Petrolero e Industrial</title>
-  <meta name="description" content="Petroservicios Industriales S.A.S (PSI): fabricación, certificación y servicio de equipos y herramientas para el sector petrolero e industrial bajo estándares API e ISO. Bogotá, Colombia.">
+  <title>Petroservicios Industriales S.A.S — Inicio</title>
+  <meta name="description" content="PSI — Petroservicios Industriales S.A.S: fabricación, certificación y servicio de equipos y herramientas para el sector petrolero e industrial bajo estándares API e ISO. Bogotá, Colombia.">
   <meta name="theme-color" content="#0B1568">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Petroservicios Industriales S.A.S">
-  <meta property="og:description" content="Sector Petrolero e Industrial · Certificados API e ISO · Bogotá, Colombia">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/logo-psi.png">
-
-  <!-- Fuentes (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ================= NAV ================= -->
 <header class="nav"><div class="wrap in">
-  <a href="#inicio" aria-label="PSI — Inicio"><img class="logo-img" src="assets/img/logo-psi.png" alt="Petroservicios Industriales S.A.S"></a>
+  <a href="index.html" aria-label="PSI — Inicio"><img class="logo-img" src="assets/img/logo-psi.png" alt="Petroservicios Industriales S.A.S"></a>
   <nav>
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca">Acerca de</a></li>
-      <li class="has-drop"><a href="#productos">Productos <span class="car" aria-hidden="true">▾</span></a>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li class="has-drop"><a href="productos.html">Productos <span class="car" aria-hidden="true">▾</span></a>
         <div class="drop">
-          <a href="#petrolero">Sector Petrolero</a>
-          <a href="#industrial">Sector Industrial</a>
-          <a href="#certificaciones">Certificaciones</a>
+          <a href="sector-petrolero.html">Sector Petrolero</a>
+          <a href="sector-industrial.html">Sector Industrial</a>
         </div>
       </li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contacto" class="cta">Contacto</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contacto.html" class="cta">Contacto</a></li>
     </ul>
   </nav>
   <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="inicio"><div class="wrap in">
-  <div>
-    <p class="eyebrow">Servicios para la industria petrolera e industrial</p>
-    <h1>Ingeniería de fondo de pozo, precisión en superficie</h1>
-    <p>Fabricación, certificación y servicio de equipos y herramientas bajo estándares API e ISO. Dos sectores, una misma exigencia de calidad.</p>
+<!-- ===== HERO DE VIDEO ===== -->
+<section class="hero-video">
+  <div class="vbg"></div>
+  <video class="vid" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg">
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="ghost">PETROSERVICIOS</div>
+  <span class="vidnote">Video de fondo (IA) → assets/video/hero.mp4</span>
+  <div class="wrap content">
+    <p class="eyebrow">Petroservicios Industriales S.A.S</p>
+    <h1>Precisión que mueve la industria</h1>
+    <p class="lead">Fabricación, certificación y servicio de equipos y herramientas para el sector petrolero e industrial, bajo estándares API e ISO.</p>
     <div class="btns">
-      <a href="#productos" class="btn onDark">Ver productos →</a>
-      <a href="#contacto" class="btn onDarkGhost">Contáctanos</a>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>API + ISO</b><span>Certificados</span></div>
-      <div class="stat"><b>2</b><span>Sectores</span></div>
-      <div class="stat"><b>Bogotá</b><span>Colombia</span></div>
+      <a href="productos.html" class="btn onDark">Ver productos →</a>
+      <a href="contacto.html" class="btn onDarkGhost">Contáctanos</a>
     </div>
   </div>
-  <div class="video-ph">
-    <div class="play"></div>
-    <small>Video intro (IA) — placeholder</small>
-  </div>
-</div></section>
+  <span class="scroll" aria-hidden="true">Desliza ↓</span>
+</section>
 
-<!-- ================= FRANJA DE CONFIANZA ================= -->
+<!-- ===== FRANJA DE CONFIANZA ===== -->
 <div class="trust"><div class="wrap in">
   <span class="lbl">Certificados:</span>
   <span class="badge">API Q1</span><span class="badge">API 5B</span><span class="badge">API 6A</span>
@@ -76,246 +62,60 @@
   <span class="badge">ISO 9001</span><span class="badge">ISO 14001</span><span class="badge">ISO 45001</span>
 </div></div>
 
-<!-- ================= ACERCA DE ================= -->
-<section id="acerca"><div class="wrap about">
-  <div>
-    <p class="eyebrow">Acerca de</p>
-    <h2 class="sec-title">Experiencia que respalda cada operación</h2>
-    <div class="rule"></div>
-    <p class="sec-intro">Petroservicios Industriales S.A.S atiende dos frentes complementarios: el sector petrolero, con equipos y herramientas certificados, y el sector industrial, con fabricación y mecanizado de precisión. [Espacio para reseña de la empresa, misión y trayectoria.]</p>
-    <div style="margin-top:22px"><a href="#productos" class="btn outline">Nuestras capacidades</a></div>
-  </div>
-  <div class="ph-img"><span>Foto / planta / equipo</span></div>
-</div></section>
-
-<!-- ================= PRODUCTOS (SECTORES) ================= -->
-<section class="sectores" id="productos"><div class="wrap center">
-  <p class="eyebrow">Productos</p>
-  <h2 class="sec-title">Nuestros productos</h2>
+<!-- ===== RESUMEN ===== -->
+<section><div class="wrap center">
+  <p class="eyebrow">Un vistazo</p>
+  <h2 class="sec-title">Todo en un solo lugar</h2>
   <div class="rule"></div>
-  <div class="split" style="margin-top:34px;text-align:left">
-    <a href="#petrolero" class="sbig petro">
-      <span class="k">01 · Certificado API</span>
+  <p class="sec-intro">Un resumen de lo que somos y lo que ofrecemos. Entra a cada sección para conocer el detalle.</p>
+  <div class="summary" style="text-align:left">
+    <a class="scard" href="acerca.html">
+      <div class="ic"></div>
+      <h3>Acerca de</h3>
+      <p>Nuestra historia, infraestructura, equipo y diferenciadores.</p>
+      <span class="go">Conócenos →</span>
+    </a>
+    <a class="scard" href="sector-petrolero.html">
+      <div class="ic"></div>
       <h3>Sector Petrolero</h3>
-      <p>Wireline, herramientas de perforación, conexiones, casing &amp; tubing y unidades wireline.</p>
+      <p>Wireline, herramientas, conexiones, casing &amp; tubing y unidades.</p>
       <span class="go">Ver línea →</span>
     </a>
-    <a href="#industrial" class="sbig indus">
-      <span class="k">02 · Certificado ISO</span>
+    <a class="scard" href="sector-industrial.html">
+      <div class="ic"></div>
       <h3>Sector Industrial</h3>
-      <p>Estructuras, mecanizados, soldaduras calificadas y fabricación según planos.</p>
+      <p>Estructuras, mecanizados, soldaduras y fabricación según planos.</p>
       <span class="go">Ver línea →</span>
+    </a>
+    <a class="scard" href="blog.html">
+      <div class="ic"></div>
+      <h3>Blog</h3>
+      <p>Contenido educativo sobre la industria petrolera e industrial.</p>
+      <span class="go">Leer →</span>
     </a>
   </div>
 </div></section>
 
-<!-- ================= SECTOR PETROLERO ================= -->
-<section id="petrolero"><div class="wrap">
-  <p class="eyebrow">Sector Petrolero</p>
-  <h2 class="sec-title">Equipos y herramientas certificados</h2>
-  <div class="rule"></div>
-  <div class="legend"><span class="dot"></span> Producto certificado API</div>
-  <div class="pgrid">
-    <article class="pcard">
-      <div class="img"><span class="tag">Wireline</span><span class="cert">Certificado</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Wireline — Presión y herramientas</h4><p>Equipos de control de presión y herramientas de wireline certificados.</p>
-        <div class="foot"><span class="std">API 6A</span><span class="more">Ver →</span></div></div>
-    </article>
-    <article class="pcard">
-      <div class="img"><span class="tag">Perforación</span><span class="cert">Certificado</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Herramientas de perforación</h4><p>Fabricación y certificación de roscas (thread gauging).</p>
-        <div class="foot"><span class="std">API 7-1 · 7-2 · 5B</span><span class="more">Ver →</span></div></div>
-    </article>
-    <article class="pcard">
-      <div class="img"><span class="tag">Conexiones</span><span class="cert">Certificado</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Crossover y conexiones</h4><p>Fabricación de crossover y reparación de conexiones.</p>
-        <div class="foot"><span class="std">API 7-1 · 7-2</span><span class="more">Ver →</span></div></div>
-    </article>
-    <article class="pcard">
-      <div class="img"><span class="tag">Casing &amp; Tubing</span><span class="cert">Certificado</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Casing y Tubing</h4><p>Inspección y certificación de casing y tubing.</p>
-        <div class="foot"><span class="std">API 5CT</span><span class="more">Ver →</span></div></div>
-    </article>
-    <article class="pcard">
-      <div class="img"><span class="tag">Unidades</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Unidades Wireline</h4><p>Fabricación y reparación de unidades y Drum.</p>
-        <div class="foot"><span class="std">Fabricación</span><span class="more">Ver →</span></div></div>
-    </article>
-    <article class="pcard" style="justify-content:center;align-items:center;text-align:center;background:var(--surface-1);border-style:dashed">
-      <div class="body" style="align-items:center;justify-content:center">
-        <h4 style="color:var(--psi-cobalt)">+ Espacio</h4><p>Para nuevas líneas o subproductos.</p>
-      </div>
-    </article>
+<!-- ===== BANDA CTA ===== -->
+<section style="padding-top:0"><div class="wrap">
+  <div class="ctaband">
+    <h2>¿Tienes un proyecto en mente?</h2>
+    <p>Cuéntanos qué necesitas y te acompañamos desde el diseño hasta la entrega certificada.</p>
+    <a href="contacto.html" class="btn onDark">Hablemos →</a>
   </div>
 </div></section>
 
-<!-- ================= SECTOR INDUSTRIAL ================= -->
-<section class="industrial" id="industrial"><div class="wrap">
-  <p class="eyebrow">Sector Industrial</p>
-  <h2 class="sec-title">Fabricación y mecanizado de precisión</h2>
-  <div class="rule"></div>
-  <p class="sec-intro">Todos los desarrollos se respaldan con <strong>software de simulación</strong> para validación e <strong>informes de ingeniería</strong>. Certificado ISO 9001 · 14001 · 45001.</p>
-  <div class="pgrid">
-    <article class="pcard"><div class="img"><span class="tag">Estructuras</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Estructuras metálicas</h4><p>Diseño y fabricación de estructuras.</p><div class="foot"><span class="std">ISO 9001</span><span class="more">Ver →</span></div></div></article>
-    <article class="pcard"><div class="img"><span class="tag">Suministros</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Suministros industriales</h4><p>Provisión de insumos y componentes.</p><div class="foot"><span class="std">—</span><span class="more">Ver →</span></div></div></article>
-    <article class="pcard"><div class="img"><span class="tag">Mecanizado</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Mecanizados especiales</h4><p>Servicios de mecanizado de precisión.</p><div class="foot"><span class="std">ISO 9001</span><span class="more">Ver →</span></div></div></article>
-    <article class="pcard"><div class="img"><span class="tag">Soldadura</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Soldaduras bajo procedimiento</h4><p>Soldadura con procedimientos (WPS) calificados.</p><div class="foot"><span class="std">ISO 9001</span><span class="more">Ver →</span></div></div></article>
-    <article class="pcard"><div class="img"><span class="tag">Mecanizado</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Mecanizados generales</h4><p>Torno, fresado y trabajos generales.</p><div class="foot"><span class="std">—</span><span class="more">Ver →</span></div></div></article>
-    <article class="pcard"><div class="img"><span class="tag">Ingeniería</span><span class="ph">Imagen</span></div>
-      <div class="body"><h4>Fabricación según planos</h4><p>A partir de tus planos, con validación por simulación.</p><div class="foot"><span class="std">Cotización ↓</span><span class="more">Ver →</span></div></div></article>
-  </div>
-
-  <!-- Fabricación según planos + cotización -->
-  <div class="planos">
-    <div class="info">
-      <h3>Fabricación según planos</h3>
-      <p>Envíanos tu plano y te preparamos una cotización. Cada desarrollo se valida con software de simulación y se entrega con informe de ingeniería.</p>
-      <div class="feature"><div class="mk"></div><div><b>Simulación previa</b><span>Validación por software antes de fabricar.</span></div></div>
-      <div class="feature"><div class="mk"></div><div><b>Informe de ingeniería</b><span>Documentación técnica del desarrollo.</span></div></div>
-      <div class="feature"><div class="mk"></div><div><b>Procedimientos calificados</b><span>Soldadura y mecanizado bajo norma.</span></div></div>
-    </div>
-    <form class="quote" data-psi-form>
-      <h4>Sube tu plano y solicita cotización</h4>
-      <p class="sub">Formato PDF · lo revisamos y te respondemos.</p>
-      <label class="dropzone" for="plano">
-        <span class="ic">PDF</span>
-        <b>Arrastra tu plano o haz clic</b>
-        <small>PDF hasta 20 MB</small>
-        <input id="plano" name="plano" type="file" accept="application/pdf" hidden>
-      </label>
-      <div class="two">
-        <div class="field"><label for="q-nombre">Nombre</label><input id="q-nombre" name="nombre" type="text" placeholder="Tu nombre" required></div>
-        <div class="field"><label for="q-empresa">Empresa</label><input id="q-empresa" name="empresa" type="text" placeholder="Empresa"></div>
-      </div>
-      <div class="field"><label for="q-correo">Correo</label><input id="q-correo" name="correo" type="email" placeholder="correo@empresa.com" required></div>
-      <div class="field"><label for="q-detalle">Detalle</label><textarea id="q-detalle" name="detalle" placeholder="Cantidad, material, plazo…"></textarea></div>
-      <button type="submit" class="btn primary" style="margin-top:14px;width:100%;justify-content:center">Solicitar cotización →</button>
-    </form>
-  </div>
-</div></section>
-
-<!-- ================= CERTIFICACIONES ================= -->
-<section id="certificaciones"><div class="wrap center">
-  <p class="eyebrow">Respaldo</p>
-  <h2 class="sec-title">Panel de certificaciones</h2>
-  <div class="rule"></div>
-  <p class="sec-intro">Cumplimiento verificable en ambos sectores. [Aquí se cargarán los certificados en PDF.]</p>
-  <div class="certpanel" style="text-align:left">
-    <div class="certcol">
-      <div class="h"><span class="k">Sector Petrolero</span></div>
-      <h3 style="margin-bottom:16px">Estándares API</h3>
-      <div class="certlist">
-        <span class="certitem"><span class="c"></span>API Q1</span>
-        <span class="certitem"><span class="c"></span>API 5B</span>
-        <span class="certitem"><span class="c"></span>API 6A</span>
-        <span class="certitem"><span class="c"></span>API 7-1</span>
-        <span class="certitem"><span class="c"></span>API 7-2</span>
-        <span class="certitem"><span class="c"></span>API 5CT</span>
-      </div>
-      <p class="certnote">▢ Cargar certificados (PDF) — pendiente</p>
-    </div>
-    <div class="certcol">
-      <div class="h"><span class="k">Sector Industrial</span></div>
-      <h3 style="margin-bottom:16px">Estándares ISO</h3>
-      <div class="certlist">
-        <span class="certitem"><span class="c"></span>ISO 9001</span>
-        <span class="certitem"><span class="c"></span>ISO 14001</span>
-        <span class="certitem"><span class="c"></span>ISO 45001</span>
-      </div>
-      <p class="certnote">▢ Cargar certificados (PDF) — pendiente</p>
-    </div>
-  </div>
-</div></section>
-
-<!-- ================= INFRAESTRUCTURA ================= -->
-<section style="background:var(--surface-1);border-top:1px solid var(--border)"><div class="wrap">
-  <p class="eyebrow">Infraestructura</p>
-  <h2 class="sec-title">Planta y capacidades</h2>
-  <div class="rule"></div>
-  <div class="gallery">
-    <div class="gcell"><span>Foto 1</span></div>
-    <div class="gcell"><span>Foto 2</span></div>
-    <div class="gcell"><span>Foto 3</span></div>
-    <div class="gcell"><span>Foto 4</span></div>
-  </div>
-</div></section>
-
-<!-- ================= BLOG ================= -->
-<section id="blog"><div class="wrap">
-  <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap">
-    <div>
-      <p class="eyebrow">Blog</p>
-      <h2 class="sec-title">Conocimiento técnico del sector</h2>
-      <div class="rule"></div>
-      <p class="sec-intro">Contenido educativo sobre wireline, slickline, control de presión, normas API/ISO y buenas prácticas de la industria petrolera e industrial.</p>
-    </div>
-    <a class="btn outline" href="#blog">Ver todo el blog →</a>
-  </div>
-  <div class="pgrid" style="margin-top:32px">
-    <article class="pcard">
-      <div class="img"><span class="tag">Fundamentos</span><span class="ph">Portada</span></div>
-      <div class="body"><h4>¿Qué es el wireline y para qué se usa?</h4>
-        <p>Una guía introductoria a las operaciones de wireline en pozos y sus aplicaciones.</p>
-        <div class="foot"><span class="std">5 min de lectura</span><span class="more">Leer →</span></div></div>
-    </article>
-    <article class="pcard">
-      <div class="img"><span class="tag">Seguridad</span><span class="ph">Portada</span></div>
-      <div class="body"><h4>Control de presión (PCE): componentes clave</h4>
-        <p>Qué compone un equipo de control de presión y por qué la certificación importa.</p>
-        <div class="foot"><span class="std">7 min de lectura</span><span class="more">Leer →</span></div></div>
-    </article>
-    <article class="pcard">
-      <div class="img"><span class="tag">Normas</span><span class="ph">Portada</span></div>
-      <div class="body"><h4>API 6A, 7-1 y 5CT explicadas</h4>
-        <p>Para qué sirve cada norma y qué garantiza en un equipo o herramienta.</p>
-        <div class="foot"><span class="std">6 min de lectura</span><span class="more">Leer →</span></div></div>
-    </article>
-  </div>
-</div></section>
-
-<!-- ================= CONTACTO ================= -->
-<section class="contact" id="contacto"><div class="wrap">
-  <p class="eyebrow">Contacto</p>
-  <h2 class="sec-title">Hablemos de tu proyecto</h2>
-  <div class="rule"></div>
-  <div class="cgrid">
-    <div class="cinfo">
-      <div class="row"><div class="mk">◉</div><div><b>Dirección</b><span>Cra. 42 No. 18–06, Puente Aranda, Bogotá D.C., Colombia</span></div></div>
-      <div class="row"><div class="mk">☎</div><div><b>Teléfono</b><span>(601) 704 22 70 · 317 682 22 41 · 300 726 32 80</span></div></div>
-      <div class="row"><div class="mk">✉</div><div><b>Correo</b><span>ventaspsi@petroservicios.com · gerencia@petroservicios.com</span></div></div>
-      <div class="row"><div class="mk">in</div><div><b>Redes</b><span>LinkedIn · Facebook</span></div></div>
-      <div class="ph-img" style="min-height:180px;margin-top:8px"><span>Mapa (Google Maps)</span></div>
-    </div>
-    <form class="cform" data-psi-form>
-      <div class="two">
-        <div class="field"><label for="c-nombre">Nombre</label><input id="c-nombre" name="nombre" type="text" placeholder="Tu nombre" required></div>
-        <div class="field"><label for="c-empresa">Empresa</label><input id="c-empresa" name="empresa" type="text" placeholder="Empresa"></div>
-      </div>
-      <div class="field"><label for="c-correo">Correo</label><input id="c-correo" name="correo" type="email" placeholder="correo@empresa.com" required></div>
-      <div class="field"><label for="c-asunto">Asunto</label><input id="c-asunto" name="asunto" type="text" placeholder="Motivo de contacto"></div>
-      <div class="field"><label for="c-mensaje">Mensaje</label><textarea id="c-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea></div>
-      <button type="submit" class="btn primary" style="margin-top:14px;width:100%;justify-content:center">Enviar mensaje →</button>
-    </form>
-  </div>
-</div></section>
-
-<!-- ================= FOOTER ================= -->
 <footer class="pg"><div class="wrap">
   <div class="cols">
     <div>
       <div class="lg"><span class="p">P</span><span class="s">S</span><span class="i">I</span></div>
       <p class="small">Petroservicios Industriales S.A.S<br>Cra. 42 No. 18–06, Puente Aranda<br>Bogotá D.C., Colombia</p>
     </div>
-    <div><h5>Productos</h5><ul><li><a href="#petrolero">Sector Petrolero</a></li><li><a href="#industrial">Sector Industrial</a></li><li><a href="#certificaciones">Certificaciones</a></li></ul></div>
-    <div><h5>Empresa</h5><ul><li><a href="#acerca">Acerca de</a></li><li><a href="#blog">Blog</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+    <div><h5>Productos</h5><ul><li><a href="sector-petrolero.html">Sector Petrolero</a></li><li><a href="sector-industrial.html">Sector Industrial</a></li></ul></div>
+    <div><h5>Empresa</h5><ul><li><a href="acerca.html">Acerca de</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
     <div><h5>Contacto</h5><ul><li>ventaspsi@petroservicios.com</li><li>(601) 704 22 70</li><li>LinkedIn · Facebook</li></ul></div>
   </div>
-  <div class="bottom"><span>© <span id="year">2026</span> Petroservicios Industriales S.A.S</span><span>Diseño en construcción · v1</span></div>
+  <div class="bottom"><span>© <span id="year">2026</span> Petroservicios Industriales S.A.S</span><span>Diseño en construcción · v2</span></div>
 </div></footer>
 
 <script src="js/main.js"></script>

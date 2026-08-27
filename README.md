@@ -7,18 +7,28 @@ Pensado para publicarse en **GitHub Pages** y luego migrar a hosting oficial.
 
 ```
 psi-web/
-├── index.html            # Página principal (home)
-├── css/
-│   └── styles.css        # Estilos y sistema de diseño (tokens de color, tipografía, componentes)
-├── js/
-│   └── main.js           # Navegación móvil, dropdown, formularios
+├── index.html              # Inicio (corto) — hero de video de fondo + resumen
+├── acerca.html             # Acerca de — sub-paneles + frases rotativas
+├── productos.html          # Productos — Sector Petrolero / Sector Industrial
+├── sector-petrolero.html   # Sector Petrolero — submenú lateral de subcategorías
+├── sector-industrial.html  # Sector Industrial — submenú lateral + subir plano
+├── blog.html               # Blog — 6 artículos + ver más
+├── contacto.html           # Contacto
+├── css/styles.css          # Sistema de diseño (tokens, tipografía, componentes)
+├── js/main.js              # Nav móvil, dropdown, tabs de sector, frases rotativas, formularios
 ├── assets/
-│   ├── img/
-│   │   └── logo-psi.png   # Logo oficial
-│   └── docs/             # Certificados PDF, fichas técnicas (por cargar)
-├── .nojekyll             # Evita el procesamiento Jekyll en GitHub Pages
+│   ├── img/  logo-psi.png  # Logo oficial (+ pon aquí fotos: hero-poster.jpg, etc.)
+│   ├── video/              # Video del hero → hero.mp4 (por cargar)
+│   └── docs/               # Certificados PDF, fichas técnicas (por cargar)
+├── .nojekyll               # Evita el procesamiento Jekyll en GitHub Pages
 └── README.md
 ```
+
+## Video de fondo del Inicio
+El hero usa `assets/video/hero.mp4` (autoplay, silenciado, en bucle). Mientras no exista,
+se muestra un degradado azul de respaldo. Sugerencia: un plano de un torno mecanizando,
+en horizontal, comprimido (~1080p, pocos MB). Puedes añadir también `assets/img/hero-poster.jpg`
+como imagen de respaldo mientras carga el video.
 
 ## Ver el sitio en local
 

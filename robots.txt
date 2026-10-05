@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cristianrepizo20182-spec.github.io/PETROSERVICIOS/sitemap.xml

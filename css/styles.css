@@ -460,18 +460,6 @@ footer.pg .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;pad
 .certvalue li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,.88);line-height:1.5}
 .certvalue li::before{content:"\2713";flex:none;width:20px;height:20px;border-radius:50%;background:var(--psi-electric);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
 
-/* =========================================================
-   INTRO DE ENTRADA (Inicio) — video a pantalla completa + cierre en iris
-   ========================================================= */
-html.intro-lock,html.intro-lock body{overflow:hidden;height:100%}
-.siteintro{position:fixed;inset:0;z-index:9999;overflow:hidden;background:#060912;clip-path:circle(150% at 50% 50%);opacity:1;transition:clip-path 1s cubic-bezier(.76,0,.24,1), opacity .7s ease .3s}
-.siteintro.exiting{clip-path:circle(0% at 50% 50%);opacity:.985}
-.siteintro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#060912}
-.siteintro-vignette{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(120% 100% at 50% 50%, transparent 55%, rgba(3,5,16,.55) 100%),linear-gradient(180deg, rgba(3,5,16,.45) 0%, transparent 16%, transparent 78%, rgba(3,5,16,.6) 100%)}
-.siteintro-skip{position:absolute;top:22px;right:22px;z-index:2;display:inline-flex;align-items:center;gap:7px;font-family:var(--f-mono);font-size:12px;letter-spacing:.5px;color:rgba(255,255,255,.85);background:rgba(8,11,30,.4);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);padding:9px 16px;border-radius:100px;cursor:pointer;transition:background .15s, border-color .15s, color .15s}
-.siteintro-skip:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.45);color:#fff}
-.siteintro-skip:focus-visible{outline:2px solid var(--psi-electric);outline-offset:2px}
-@media(max-width:560px){.siteintro-skip{top:16px;right:16px;padding:8px 14px}}
 
 
 /* ---------- FOTOS REALES, PIES, LINEA DE TIEMPO (Acerca de) ---------- */
@@ -599,3 +587,24 @@ html.intro-lock,html.intro-lock body{overflow:hidden;height:100%}
 @media(prefers-reduced-motion:reduce){.wa-float::before{animation:none}.wa-float{transition:none}}
 @media(max-width:520px){.wa-float{width:58px;padding:0;justify-content:center}.wa-float span{display:none}}
 @media print{.wa-float{display:none}}
+
+
+/* ---------- Intro en el hero: el video corre dentro del hero y se desvanece al terminar ---------- */
+.hero-intro{position:absolute;inset:0;z-index:6;background:radial-gradient(120% 90% at 50% 50%,#0C1535 0%,#05070C 75%);transition:opacity .9s ease,visibility .9s}
+.hero-intro.done{opacity:0;visibility:hidden;pointer-events:none}
+.hero-video .hero-intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%;display:block}
+.hero-intro-skip{position:absolute;top:18px;right:18px;z-index:2;display:inline-flex;align-items:center;font-family:var(--f-mono);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.85);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);padding:8px 14px;border-radius:100px;cursor:pointer;backdrop-filter:blur(6px);transition:background .2s,border-color .2s}
+.hero-intro-skip:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.5);color:#fff}
+.hero-intro-skip:focus-visible{outline:2px solid var(--psi-electric);outline-offset:2px}
+@media(max-width:760px){
+  .hero-video .hero-intro-video{transform:scale(1.55);object-fit:contain;object-position:50% 50%;-webkit-mask-image:linear-gradient(transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(transparent,#000 14%,#000 86%,transparent)}
+}
+.hero-video.reveal .content{animation:heroIn 1s ease .15s both}
+@keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero-intro{transition:none}.hero-video.reveal .content{animation:none}}
+
+
+/* ---------- WhatsApp: solo icono ---------- */
+.wa-float{width:60px;height:60px;padding:0;justify-content:center;gap:0}
+.wa-float span{display:none}
+.wa-float svg{width:32px;height:32px}

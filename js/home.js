@@ -1,4 +1,4 @@
-/* PSI - Inicio: cifras animadas y parallax suave (respeta prefers-reduced-motion) */
+/* PSI - Inicio: cifras animadas (respeta prefers-reduced-motion) */
 (function () {
   "use strict";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -29,18 +29,4 @@
     for (var k = 0; k < counters.length; k++) io.observe(counters[k]);
   }
 
-  var bg = document.querySelector(".people-bg");
-  if (bg && !reduce) {
-    var sec = bg.parentNode, ticking = false;
-    function move() {
-      var r = sec.getBoundingClientRect(), vh = window.innerHeight;
-      if (r.bottom > 0 && r.top < vh) {
-        var p = (r.top + r.height / 2 - vh / 2) / vh;
-        bg.style.transform = "translate3d(0," + (p * -60).toFixed(1) + "px,0)";
-      }
-      ticking = false;
-    }
-    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(move); } }, { passive: true });
-    move();
-  }
 })();

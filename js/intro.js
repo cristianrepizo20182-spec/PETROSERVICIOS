@@ -32,8 +32,20 @@
   if (skipBtn) skipBtn.addEventListener("click", exit);
   if (video) {
     // Al terminar, el ultimo fotograma (logo completo) queda a la vista un instante antes del cierre.
-    video.addEventListener("ended", function () { setTimeout(exit, 800); });
+    video.addEventListener("ended", function () { setTimeout(exit, 1300); });
     video.addEventListener("error", exit);
+    // Arranque acelerado: la primera parte (tuberias y engranaje) pasa rapido y se frena
+    // hasta velocidad normal justo antes del encendido del logo (~5 s), para alcanzar a leer PSI.
+    var FAST = 2.6, EASE_FROM = 3.4, NORMAL_AT = 5.0;
+    var pacer = setInterval(function () {
+      if (exited || video.ended) { clearInterval(pacer); return; }
+      var t = video.currentTime, r;
+      if (t <= EASE_FROM) r = FAST;
+      else if (t >= NORMAL_AT) r = 1;
+      else { var k = (t - EASE_FROM) / (NORMAL_AT - EASE_FROM); r = FAST - (FAST - 1) * k * k * (3 - 2 * k); }
+      if (Math.abs(video.playbackRate - r) > 0.01) video.playbackRate = r;
+    }, 40);
+    video.playbackRate = FAST;
     var p = video.play();
     if (p && p.catch) p.catch(exit);
   }

@@ -47,5 +47,5 @@
   }
 
   // Red de seguridad: nunca dejar al usuario atrapado si algo falla.
-  setTimeout(exit, 7000);
+  setTimeout(exit, 8500);
 })();

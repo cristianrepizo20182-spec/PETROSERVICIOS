@@ -608,3 +608,14 @@ footer.pg .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;pad
 .wa-float{width:60px;height:60px;padding:0;justify-content:center;gap:0}
 .wa-float span{display:none}
 .wa-float svg{width:32px;height:32px}
+
+
+/* ---------- Scroll reveal (home) ---------- */
+.rv-on .people,.rv-on .plant,.rv-on .what,.rv-on .certshow{overflow-x:clip}
+.rv-on [data-rv]{opacity:0;transition:opacity .55s ease,transform .6s cubic-bezier(.2,.75,.2,1);transition-delay:var(--rv-d,0s);will-change:transform,opacity}
+.rv-on [data-rv="left"]{transform:translateX(-70px)}
+.rv-on [data-rv="right"]{transform:translateX(70px)}
+.rv-on [data-rv="up"]{transform:translateY(34px)}
+.rv-on [data-rv].in{opacity:1;transform:none}
+@media(max-width:760px){.rv-on [data-rv="left"]{transform:translateX(-36px)}.rv-on [data-rv="right"]{transform:translateX(36px)}}
+@media(prefers-reduced-motion:reduce){.rv-on [data-rv]{opacity:1;transform:none;transition:none}}

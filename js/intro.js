@@ -32,11 +32,11 @@
   if (skipBtn) skipBtn.addEventListener("click", exit);
   if (video) {
     // Al terminar, el ultimo fotograma (logo completo) queda a la vista un instante antes del cierre.
-    video.addEventListener("ended", function () { setTimeout(exit, 1300); });
+    video.addEventListener("ended", function () { setTimeout(exit, 500); });
     video.addEventListener("error", exit);
-    // Arranque acelerado: la primera parte (tuberias y engranaje) pasa rapido y se frena
-    // hasta velocidad normal justo antes del encendido del logo (~5 s), para alcanzar a leer PSI.
-    var FAST = 2.6, EASE_FROM = 3.4, NORMAL_AT = 5.0;
+    // Arranque acelerado: solo el inicio (engranaje solo) pasa rapido; al caer las gotas de
+    // petroleo (~1.8 s del video) vuelve a velocidad normal hasta el final.
+    var FAST = 3, EASE_FROM = 1.3, NORMAL_AT = 1.9;
     var pacer = setInterval(function () {
       if (exited || video.ended) { clearInterval(pacer); return; }
       var t = video.currentTime, r;

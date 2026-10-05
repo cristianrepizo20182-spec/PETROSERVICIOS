@@ -559,3 +559,25 @@ html.intro-lock,html.intro-lock body{overflow:hidden;height:100%}
 .certmore summary::after{content:"+";font-size:18px;line-height:1}
 .certmore[open] summary::after{content:"\2212"}
 .certmore[open] summary{margin-bottom:12px}
+
+
+/* ---------- Header claro con el logo original ---------- */
+.nav{background:#fff;border-bottom:1px solid var(--border)}
+.nav .in{height:84px}
+.brand img.brandlogo{display:block;height:66px;width:auto}
+.nav ul{color:var(--text-muted)}
+.nav ul a:hover{color:var(--psi-cobalt)}
+.nav ul a.active{color:var(--psi-cobalt);font-weight:600}
+.langsw{background:var(--surface-1);border-color:var(--border)}
+.langsw a{color:var(--text-dim)}
+.langsw a:hover{color:var(--psi-cobalt)}
+.langsw a.on{color:#fff}
+.burger{border-color:var(--border-strong)}
+.burger span{background:var(--text)}
+@media(max-width:880px){
+  .nav.open ul{top:84px;background:#fff;border-bottom-color:var(--border)}
+  .nav.open ul a.active{color:var(--psi-cobalt)}
+  .nav.open .drop a{color:var(--text-muted)}
+  .nav.open .drop a:hover{color:var(--psi-cobalt);background:var(--surface-1)}
+}
+@media(max-width:520px){.nav .in{height:70px}.brand img.brandlogo{height:54px}.nav.open ul{top:70px}}

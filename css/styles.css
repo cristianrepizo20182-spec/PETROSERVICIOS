@@ -619,3 +619,26 @@ footer.pg .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;pad
 .rv-on [data-rv].in{opacity:1;transform:none}
 @media(max-width:760px){.rv-on [data-rv="left"]{transform:translateX(-36px)}.rv-on [data-rv="right"]{transform:translateX(36px)}}
 @media(prefers-reduced-motion:reduce){.rv-on [data-rv]{opacity:1;transform:none;transition:none}}
+
+/* ===== Foco API 6A ===== */
+.ticker .hl{color:var(--psi-cobalt);font-weight:700}
+.apifocus{background:linear-gradient(135deg,var(--psi-navy) 0%,#0A0E33 100%);color:#fff;position:relative;overflow:hidden}
+.apifocus::before{content:"API 6A";position:absolute;right:-2%;top:50%;transform:translateY(-50%);font-family:var(--f-display);font-weight:700;font-size:clamp(120px,22vw,300px);letter-spacing:-4px;color:rgba(255,255,255,.04);white-space:nowrap;pointer-events:none}
+.apif-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(28px,5vw,64px);align-items:center}
+.apif-tags{display:flex;gap:10px;margin-bottom:18px}
+.apif-tags span{font-family:var(--f-display);font-weight:700;font-size:clamp(20px,3vw,30px);letter-spacing:1px;padding:8px 20px;border-radius:10px;background:var(--psi-cyan);color:var(--psi-navy)}
+.apif-tags span+span{background:transparent;color:var(--psi-cyan);border:2px solid var(--psi-cyan)}
+.apifocus .eyebrow{color:var(--psi-cyan)}
+.apifocus .sec-title{color:#fff;max-width:20ch}
+.apif-lead{font-size:18px;color:rgba(255,255,255,.86);max-width:60ch;margin:16px 0 20px}
+.apif-lead b{color:#fff}
+.apif-chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0}
+.apif-chips li{font-family:var(--f-mono);font-size:12px;letter-spacing:1px;padding:6px 12px;border-radius:100px;border:1px solid rgba(255,255,255,.3);color:rgba(255,255,255,.85)}
+.apif-chips li.big{background:var(--psi-cyan);border-color:var(--psi-cyan);color:var(--psi-navy);font-weight:700}
+.apifocus .btn.solid{background:#fff;color:var(--psi-navy)}
+.apif-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:clamp(22px,3vw,32px);backdrop-filter:blur(4px)}
+.apif-card .k{font-family:var(--f-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--psi-cyan);margin:0}
+.apif-card h3{font-family:var(--f-display);font-weight:700;font-size:26px;margin:8px 0 10px}
+.apif-card p:not(.k){color:rgba(255,255,255,.82);font-size:15.5px;margin:0 0 20px}
+.apif-btn{background:var(--psi-cyan);color:var(--psi-navy);border-color:var(--psi-cyan)}
+@media(max-width:860px){.apif-grid{grid-template-columns:1fr}}

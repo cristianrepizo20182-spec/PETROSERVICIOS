@@ -654,3 +654,15 @@ footer.pg .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;pad
 .apif-shots img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
 .apif-shots figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 10px;background:linear-gradient(transparent,rgba(6,9,30,.88));font-size:13.5px;color:#fff}
 @media(max-width:860px){.apif-grid{grid-template-areas:"main" "card" "proof"}.apif-shots{grid-template-columns:1fr}}
+
+/* certificaciones: foco API 6A / Q1 */
+.certdoc.star{background:linear-gradient(135deg,var(--psi-cobalt),var(--psi-navy));border:2px solid var(--psi-cyan);box-shadow:0 0 0 5px rgba(25,195,219,.16),0 14px 30px -16px rgba(10,19,102,.6);color:#fff}
+.certdoc.star h4{color:#fff;font-size:1.15em}
+.certdoc.star p{color:rgba(255,255,255,.86)}
+.certdoc.star .head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.certdoc.star .foot{border-top-color:rgba(255,255,255,.25)}
+.certdoc.star .valid{color:rgba(255,255,255,.75)}
+.certdoc.star .view{color:var(--psi-cyan);font-weight:700}
+.starpill{font-family:var(--f-mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;background:var(--psi-cyan);color:var(--psi-navy);padding:3px 10px;border-radius:100px}
+.compnote{margin:4px 0 14px;font-size:14px;color:var(--text-muted)}
+.compnote a{color:var(--psi-cobalt);font-weight:600;text-decoration:underline}

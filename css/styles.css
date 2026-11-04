@@ -666,3 +666,6 @@ footer.pg .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;pad
 .starpill{font-family:var(--f-mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;background:var(--psi-cyan);color:var(--psi-navy);padding:3px 10px;border-radius:100px}
 .compnote{margin:4px 0 14px;font-size:14px;color:var(--text-muted)}
 .compnote a{color:var(--psi-cobalt);font-weight:600;text-decoration:underline}
+
+/* fondo de imagen: Respaldo verificable (assets/img/certs-fondo.jpg, claro y tenue) */
+#certificaciones.certbg{background:linear-gradient(180deg,rgba(246,248,252,.82),rgba(246,248,252,.92)),url(../assets/img/certs-fondo.jpg) center/cover no-repeat,var(--surface-1)}

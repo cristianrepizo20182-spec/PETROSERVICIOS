@@ -1,7 +1,7 @@
 /* =========================================================
    PSI — Petroservicios Industriales S.A.S
    Hoja de estilos principal · Sistema de diseño v1 (fondo blanco)
-   Tipografías: Saira · IBM Plex Sans · IBM Plex Mono (Google Fonts)
+   Tipografías: Chakra Petch · Source Sans 3 · JetBrains Mono (Google Fonts)
    ========================================================= */
 
 :root{
@@ -20,12 +20,12 @@
   --shadow:0 1px 2px rgba(15,20,36,.04), 0 8px 24px -12px rgba(15,20,36,.14);
   --shadow-lg:0 14px 44px -16px rgba(15,20,36,.30);
   --maxw:1160px;
-  --f-display:"Saira",sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",monospace;
+  --f-display:"Chakra Petch",sans-serif; --f-body:"Source Sans 3",system-ui,sans-serif; --f-mono:"JetBrains Mono",monospace;
 }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}

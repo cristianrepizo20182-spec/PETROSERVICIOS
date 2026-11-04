@@ -701,3 +701,6 @@ footer.pg .bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;pad
 .sl-tag{font-family:var(--f-mono);font-size:11px;letter-spacing:1px;color:var(--text-dim);border:1px solid var(--border-strong);border-radius:100px;padding:2px 10px}
 .sl-intro{margin:8px 0 0;color:var(--text-muted);max-width:70ch}
 .subline .pgrid{margin-top:18px}
+
+/* fondo de imagen: laboratorio de patrones (assets/img/laboratorio-fondo.jpg, claro y tenue) */
+#laboratorio{background:linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.80) 55%,rgba(255,255,255,.55) 100%),url(../assets/img/laboratorio-fondo.jpg) center/cover no-repeat,#fff}

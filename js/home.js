@@ -37,6 +37,7 @@
       [".plant-photo", "left"], [".plant-txt", "right"],
       [".what .eyebrow", "left"], [".what .sec-title", "left"], [".what .rule", "left"],
       [".certshow .center", "up"], [".certmarquee", "up"],
+      [".apif-main", "left"], [".apif-card", "right"], [".apif-proof", "up"],
       [".certmore", "up"], [".ctaband", "up"]
     ];
     var targets = [];
